@@ -1,0 +1,8 @@
+---
+- name: Unarchive a file that needs to be downloaded (added in 2.0)
+      become: true
+      ansible.builtin.unarchive:
+        src: https://github.com/VKCOM/lighthouse/archive/refs/heads/master.zip
+        dest: /usr/share   #/usr/share/lighthouse-master/
+        remote_src: yes
+...

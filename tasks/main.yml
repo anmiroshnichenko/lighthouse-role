@@ -1,0 +1,7 @@
+---
+# tasks file for lighthouse-role
+- name: Install lighthouse
+  ansible.builtin.import_tasks: install_lighthouse.yml
+- name: Install nginx
+  ansible.builtin.import_tasks: install_nginx.yml
+...
